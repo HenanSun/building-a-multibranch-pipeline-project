@@ -18,6 +18,10 @@ pipeline {
         stage('b3') {
           steps {
             echo '333'
+            script {
+              ddddd
+            }
+
           }
         }
       }
