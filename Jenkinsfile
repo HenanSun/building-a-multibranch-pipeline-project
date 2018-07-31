@@ -13,6 +13,10 @@ pipeline {
         stage('b2') {
           steps {
             echo 'ddd'
+            waitUntil() {
+              sh 'a=1'
+            }
+
           }
         }
         stage('b3') {
